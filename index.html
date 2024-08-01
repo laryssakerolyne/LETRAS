@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centralizar Palavra</title>
     <title>Centralizar Palavra com Cor de Fundo</title>
-    <title>Próxima Tela</title>
+   
+    <title>Página Inicial</title>
     <style>
         /* Estilos para centralizar o texto */
         body {
@@ -45,25 +46,45 @@
             border-radius: 5px; /* Bordas arredondadas */
         }
 
-      
-
+  
+    
         body {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f4f4;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura total da visualização */
+            margin: 0; /* Remove a margem padrão */
+            font-family: Arial, sans-serif; /* Fonte opcional */
+            background-color: #f0f0f0; /* Cor de fundo da página */
         }
 
-        h1 {
-            color: #b81212;
+        .botao {
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            font-size: 1.2em; /* Tamanho da fonte */
+            color: white; /* Cor do texto */
+            background-color: #c5f3c7; /* Cor de fundo do botão */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
         }
+    </style>
+    <script>
+        function irParaProximaTela() {
+            window.location.href = 'index02.html'; // Altere para o nome da sua próxima página
+        }
+    </script>
+</head>
+<body>
+    <button class="botao" onclick="irParaProximaTela()">Próximo</button>
+</body>
+</html>
+
+
   
     </style>
 </head>
 <body>
     <div class="centralizado">MUNDO DAS LETRAS</div>
+    
 </body>
 </html
