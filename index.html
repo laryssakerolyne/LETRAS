@@ -187,3 +187,67 @@
     </script>
    
     <style>
+
+        /* Define o estilo inicial do elemento */
+        .animacao {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: deslizar 3s infinite;
+        }
+
+        /* Define a animação */
+        @keyframes deslizar {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- Elemento que será animado -->
+    <div class="animacao"></div>
+    
+</body>
+</html
+
+<style>
+    .animacao {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+    }
+</style>
+</head>
+<body>
+
+<!-- Elemento que será animado -->
+<div id="animacao" class="animacao"></div>
+
+<script>
+    function animar() {
+        var elem = document.getElementById("animacao");
+        var pos = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (pos >= 100) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.left = pos + '%';
+            }
+        }
+    }
+
+    // Chama a função de animação quando a página é carregada
+    window.onload = animar;
+</script>
+
+</body>
+</html>
